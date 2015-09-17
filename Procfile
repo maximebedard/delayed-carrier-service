@@ -1,1 +1,1 @@
-web: delayed-carrier-service
+web: go-delayed-carrier-service
