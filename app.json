@@ -1,0 +1,8 @@
+{
+  "name": "go-delayedcarrierservice",
+  "description": "A delayed carrier service implementing Shopify's CarrierService API"
+  "image": "heroku/go:1.5",
+  "mount_dir": "src/github.com/jpcaissy/delayedcarrierservice",
+  "website": "http://github.com/jpcaissy/delayedcarrierservice",
+  "repository": "http://github.com/jpcaissy/delayedcarrierservice"
+}
