@@ -1,1 +1,1 @@
-web: ./delayedcarrierservice
+web: delayed-carrier-service
