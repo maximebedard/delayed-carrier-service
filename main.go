@@ -2,6 +2,7 @@ package main
 
 import (
     "os"
+    "strconv"
     "fmt"
     "net/http"
     "log"
@@ -23,8 +24,8 @@ type Rates struct {
 }
 
 func sleep_and_return_rates(w http.ResponseWriter, r *http.Request) {
-    seconds := time.Duration(rand.Intn(700) * 10) * time.Millisecond
-    time.Sleep(seconds)
+    milliseconds := rand.Intn(7000)
+    time.Sleep(time.Duration(milliseconds) * time.Millisecond)
 
     rates := Rates{
         []Rate{
@@ -52,7 +53,7 @@ func sleep_and_return_rates(w http.ResponseWriter, r *http.Request) {
         io.WriteString(w, "{}")
         return
     }
-    log.Println("Rendered shipping rates after " + seconds.to_ + " seconds")
+    log.Println("Rendered shipping rates after " + strconv.Itoa(milliseconds) + " msec")
 
     w.Write(json_data)
 }
