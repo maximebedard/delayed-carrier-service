@@ -1,4 +1,8 @@
 {
-  "ImportPath": "github.com/jpcaissy/delayed-shipping-carrier",
-  "GoVersion": "go1.5"
+	"ImportPath": "github.com/jpcaissy/delayed-carrier-service",
+	"GoVersion": "go1.4.2",
+	"Packages": [
+		"./..."
+	],
+	"Deps": []
 }
