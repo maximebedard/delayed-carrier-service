@@ -76,7 +76,8 @@ func delayedAuthyPhoneIntelligence(w http.ResponseWriter, r *http.Request) {
 }
 
 func sleep() int {
-	milliseconds := rand.Intn(7000)
+	// milliseconds := rand.Intn(7000)
+  milliseconds := 2000
 	time.Sleep(time.Duration(milliseconds) * time.Millisecond)
 
 	return milliseconds
